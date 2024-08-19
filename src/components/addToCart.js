@@ -3,13 +3,12 @@ import React, { useState } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Header from './components/Header';
 import ProductList from './components/ProductList';
-import ProductDetails from './components/ProductDetails';
 import Cart from './components/Cart';
 import Checkout from './components/Checkout';
+import ProductDetail from './components/ProductDetail';
 import Home from './components/Home';
 import './styles.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { withAuthenticator } from '@aws-amplify/ui-react';
 
 const App = () => {
     const [cart, setCart] = useState([]);
@@ -43,7 +42,7 @@ const App = () => {
                 />
                 <Route
                     path="/products/:id"
-                    element={<ProductDetails addToCart={addToCart} />}
+                    element={<ProductDetail addToCart={addToCart} />}
                 />
                 <Route
                     path="/cart"
@@ -58,4 +57,4 @@ const App = () => {
     );
 };
 
-export default withAuthenticator(App);
+export default App;

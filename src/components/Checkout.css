@@ -1,0 +1,17 @@
+.checkout-container {
+    margin-top: 20px;
+  }
+  
+  .checkout-img {
+    max-width: 100px;
+    height: auto;
+  }
+  
+  .table td, .table th {
+    vertical-align: middle;
+  }
+  
+  .text-end {
+    text-align: right;
+  }
+  

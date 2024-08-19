@@ -1,0 +1,39 @@
+/* src/components/ProductDetails.css */
+.product-details {
+    margin-top: 20px;
+  }
+  
+  .product-details img {
+    border-radius: 8px;
+  }
+  
+  .quantity-input {
+    max-width: 100px;
+  }
+  
+  .button-group {
+    display: flex;
+    gap: 10px;
+  }
+  
+  /* src/components/ProductList.css */
+  .custom-card {
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .custom-card img {
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .custom-card .card-body {
+    text-align: center;
+  }
+  
+  .mb-4 {
+    margin-bottom: 1.5rem; /* Increase gap between products */
+  }
+  
